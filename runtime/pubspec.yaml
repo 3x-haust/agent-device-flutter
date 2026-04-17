@@ -1,0 +1,12 @@
+name: agent_device_flutter_runtime
+description: In-app runtime for agent-device-flutter CLI (snapshot + action extensions).
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter

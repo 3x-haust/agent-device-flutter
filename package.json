@@ -1,0 +1,66 @@
+{
+  "name": "agent-device-flutter",
+  "version": "1.0.0",
+  "description": "UI automation CLI for Flutter apps on iOS, Android, macOS, Linux and their TV variants",
+  "license": "MIT",
+  "author": "agent-device-flutter contributors",
+  "keywords": [
+    "flutter",
+    "agent",
+    "automation",
+    "ui-testing",
+    "accessibility",
+    "cli",
+    "dart",
+    "ios",
+    "android",
+    "snapshot",
+    "semantics"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "agent-device-flutter": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./contracts": {
+      "types": "./dist/contracts.d.ts",
+      "import": "./dist/contracts.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "clean": "rm -rf dist .tsbuildinfo",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "AGENT_DEVICE_FLUTTER_E2E=1 vitest run --dir test/e2e",
+    "lint": "oxlint",
+    "format": "oxfmt",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

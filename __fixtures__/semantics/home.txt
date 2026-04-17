@@ -1,0 +1,60 @@
+SemanticsNode#0
+ │ Rect.fromLTRB(0.0, 0.0, 1170.0, 2532.0)
+ │
+ └─SemanticsNode#1
+   │ Rect.fromLTRB(0.0, 0.0, 390.0, 844.0) scaled by 3.0x
+   │ textDirection: ltr
+   │
+   └─SemanticsNode#2
+     │ Rect.fromLTRB(0.0, 0.0, 390.0, 844.0)
+     │ sortKey: OrdinalSortKey#7af72(order: 0.0)
+     │
+     └─SemanticsNode#3
+       │ Rect.fromLTRB(0.0, 0.0, 390.0, 844.0)
+       │ flags: scopesRoute
+       │
+       ├─SemanticsNode#9
+       │ │ Rect.fromLTRB(0.0, 0.0, 390.0, 103.0)
+       │ │
+       │ └─SemanticsNode#10
+       │     Rect.fromLTRB(167.0, 61.0, 223.0, 89.0)
+       │     flags: isHeader
+       │     identifier: "home-title"
+       │     label:
+       │       "Home
+       │       Home"
+       │     textDirection: ltr
+       │
+       └─SemanticsNode#4
+         │ Rect.fromLTRB(143.5, 103.0, 246.5, 844.0)
+         │ identifier: "home-menu"
+         │ label: "Home menu"
+         │ textDirection: ltr
+         │
+         ├─SemanticsNode#5
+         │ │ Rect.fromLTRB(0.0, 314.5, 103.1, 362.5)
+         │ │ flags: isButton
+         │ │ identifier: "nav-to-counter"
+         │ │ label: "Open counter"
+         │ │ textDirection: ltr
+         │ │
+         │ └─SemanticsNode#6
+         │     Rect.fromLTRB(0.0, 0.0, 103.1, 48.0)
+         │     actions: tap
+         │     flags: isButton, hasEnabledState, isEnabled, isFocusable
+         │     label: "Counter"
+         │     textDirection: ltr
+         │
+         └─SemanticsNode#7
+           │ Rect.fromLTRB(1.8, 378.5, 101.3, 426.5)
+           │ flags: isButton
+           │ identifier: "nav-to-signup"
+           │ label: "Open sign up"
+           │ textDirection: ltr
+           │
+           └─SemanticsNode#8
+               Rect.fromLTRB(0.0, 0.0, 99.5, 48.0)
+               actions: tap
+               flags: isButton, hasEnabledState, isEnabled, isFocusable
+               label: "Sign up"
+               textDirection: ltr

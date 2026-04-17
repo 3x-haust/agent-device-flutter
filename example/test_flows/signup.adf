@@ -1,0 +1,23 @@
+# signup.adf — fill and submit the sign-up form
+# Usage: agent-device-flutter replay ./test_flows/signup.adf --retries 1
+
+open com.agentdevice.example
+snapshot -i
+
+# Navigate home -> sign up
+press #identifier="nav-to-signup"
+snapshot -i
+
+# Fill the form
+fill #identifier="signup-name-field" "Ada Lovelace"
+fill #identifier="signup-email-field" "ada@example.com"
+
+# Toggle marketing opt-in
+press #identifier="signup-marketing-switch"
+snapshot -i
+
+# Submit and verify the success banner shows up
+press #identifier="signup-submit"
+snapshot -i
+
+close

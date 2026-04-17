@@ -1,0 +1,25 @@
+# counter.adf — drive the counter screen from a fresh launch
+# Usage: agent-device-flutter replay ./test_flows/counter.adf
+
+open com.agentdevice.example
+snapshot -i
+
+# Navigate home -> counter
+press #identifier="nav-to-counter"
+snapshot -i
+
+# Increment three times
+press #identifier="counter-increment"
+press #identifier="counter-increment"
+press #identifier="counter-increment"
+snapshot -i
+
+# Decrement once
+press #identifier="counter-decrement"
+snapshot -i
+
+# Reset back to zero
+press #identifier="counter-reset"
+snapshot -i
+
+close

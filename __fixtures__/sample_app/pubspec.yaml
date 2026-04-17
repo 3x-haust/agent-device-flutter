@@ -1,0 +1,19 @@
+name: sample_app
+description: A sample Flutter app used for agent-device-flutter tests.
+version: 1.2.3+4
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.22.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
