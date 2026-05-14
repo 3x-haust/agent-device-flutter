@@ -8,6 +8,28 @@ Inspired by [`agent-device`](https://github.com/callstackincubator/agent-device)
 
 > Status: **stable 1.0.0**. Drives real debug-mode Flutter apps through the Dart VM Service on iOS Simulators, Android devices/emulators, macOS, and Linux.
 
+Read this in Korean: [README.ko.md](./README.ko.md).
+
+<p align="center">
+  <a href="./docs/assets/agent-device-flutter-demo.mp4">
+    <img src="./docs/assets/agent-device-flutter-demo.gif" alt="agent-device-flutter driving a live Flutter app from the terminal" width="860">
+  </a>
+</p>
+
+## Tell an AI to try it
+
+If you want to try this in your own Flutter app, send an AI agent this GitHub URL with a request like this:
+
+```text
+Use this repository to drive my Flutter app.
+https://github.com/3x-haust/agent-device-flutter
+
+Launch the app or attach to its Dart VM Service URL, then use
+agent-device-flutter snapshot -i to read the screen.
+After every press/fill/scroll, take another snapshot.
+Prefer Semantics identifiers, and create replay scripts when the flow should be reused.
+```
+
 ## Features
 
 - **Flutter-first**. Reads `pubspec.yaml` to detect project mode, flavors, and entrypoints. Surfaces `Semantics` widget coverage as a first-class concept.
